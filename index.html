@@ -1,0 +1,177 @@
+<Header>BaboDialogue string cleaner (English)</Header>
+<input type="file" id="file" name="baka-strings-json"></input>
+<button type="download" id="saver">Save cleaned file</button>
+<script>
+	//by TGM043 (Discord)/ironmaiden1872 (Nexus Mods)
+	const download = (filename, text) => {
+		var pom = document.createElement('a')
+		pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text))
+		pom.setAttribute('download', filename)
+		pom.click()
+		pom.remove()
+	}
+
+	const cleaned = {
+		"string" : 
+		{
+			"baboeventwhiterunorcvisitiors01" : "The guards will no longer let unknown Orcs into the city, unless I tell them otherwise.",
+			"baboeventwhiterunorcvisitiors02" : "Something is not right... My whole body... is alarming... Something is coming...",
+			"baboeventwhiterunorcvisitiors03" : "They're going to kill everyone! I need to stop them before it's too late!",
+			"baboeventwhiterunorcvisitiors04" : "They decided to kill me... I must kill them if I am to survive!",
+			"baboeventwhiterunorcvisitiors05" : "Threatened, I have no choice but to submit my body to their dirty desire. They started to fill up my every hole with their stinky dicks.",
+			"baboeventwhiterunorcvisitiors06" : "I begged for mercy, but they didn't listen. They keep pounding my pussy... At this rate... Oh... My pussy is being destroyed...",
+			"baboeventwhiterunorcvisitiors07" : "Why are the restraints tightening more and more... I need to ask someone for help to release it before it's too late!",
+			"baboeventwhiterunorcvisitiors08" : "They left with just a warning... I won't let them play with my body!",
+			"baboeventwhiterunorcvisitiors09" : "I dealt with these Orcs... It seems that they came all this way because of my appearance... I'm still getting goosebumps... I don't want to think about if I...",
+			"baboeventwhiterunorcvisitiors10" : "I'm filled with semen. My womb is going to burst. Ughhhh... someone please... save me...",
+			"baboeventwhiterunorcvisitiors11" : "By the eight... That was a nightmare. Thank the gods they didn't take me to their base and enslave me.",
+			"baboeventwhiterunorcvisitiors12" : "The Orcs are slowly approaching me, staring at my panicked face. Their massive figures seemed to tell how fierce and violent this will get...",
+			"baboeventwhiterunorcvisitiors13" : "No, you've got to stop. My body can't hold it anymore. Please, someone, help!",
+			"baboeventwhiterunorcvisitiors14" : "No one will come to help unless they know what's going on here. I have to go outside to ask for help.",
+			"baboeventwhiterunorcvisitiors15" : "Lydia is here. Let's ask her to unshackle this.",
+			"baboeventwhiterunvicecapatain01" : "I need talk to the captain and end this nightmare!",
+			"baboeventwhiterunvicecapatain02" : "I have to win this duel! I can't afford to lose.",
+			"baboeventwhiterunvicecapatain03" : "I killed him... In my rage, I killed him... At least I'm no longer his toy...",
+			"baboeventwhiterunvicecapatain04" : "Am I saved...? Is he gone...? I should go to the jail and see what would happen to him.",
+			"baboeventwhiterunvicecapatain05" : "I won! I've defeated him! I hope everything will be back to the way it used to be.",
+			"baboeventwhiterunvicecapatain06" : "He said my stolen belongings were retrieved and delivered to my chest in Breezehome. I thought I'd lost them all...",
+			"baboeventwhiterunvicecapatain07" : "He's dead... It's finally over...",
+			"baboeventnewgnisismasterscript01" : "They locked the door! I have no choice but to fight! If I lose, my body will be ravaged by these arrogant reptiles! This is serious!",
+			"baboeventnewgnisismasterscript02" : "Filled with hatred, he began to rape me... Please, my pussy will be destroyed... I don't want to have a baby...",
+			"baboeventnewgnisismasterscript03" : "He's trying to kill me... I will cut his head off!",
+			"baboeventnewgnisismasterscript04" : "No... No...! My body is not a fucktoy!",
+			"baboeventnewgnisismasterscript05" : "The sounds of slapping flesh, my pathetic moans... I'm sure they echoed the building. Rumors will spread...",
+			"baboeventnewgnisismasterscript06" : "I thought I was free... but no...! I was too weak to resist...",
+			"baboeventmarkarthguard01" : "To where is he dragging me? This is ridiculous!",
+			"baboeventmarkarthguard02" : "The guards confiscated all of my belongings... Now... I am completely naked... I don't know what to do...",
+			"baboeventmarkarthguard03" : "It's time to go get my items back. Let's stop by the Markath Guard Tower.",
+			"baboeventmarkarthguard04" : "I retrieved my items... That was horrible... The people of Markarth saw me naked, without a scrap of cloth... They'll surely gossip about my investigation...",
+			"babodiaquest01" : "My pussy's numb after the violent gangbang... I was exhausted and tried to make them stop, but it didn't work. They kept sucking and groping all over my body. Once again, I became their cumdump.",
+			"babodiaquest02" : "I lost... I can't resist... No...",
+			"babodiaquest03" : "Now, I'm just his sex toy...",
+			"babodiamonitor01" : "I can't do that while he's in combat!",
+			"babodiamonitor02" : "He got me! What is he trying to do with me?",
+			"babodiamonitor03" : "He got me! He's choking me...!",
+			"babodiamonitor04" : "What's going on...?",
+			"baboloanshark01" : "You have failed to return back money you owed to the Loanshark Organization. A bounty has been set on your head. You are now wanted in the holds they operate in, Riften and Solitude.",
+			"baboloanshark02" : "I failed to repay the debt. I have no choice but to sell my body to get through this...",
+			"baboloanshark03" : "You're able to borrow money from the Loanshark Organization again.",
+			"babobadend01" : "No... Please don't do this. You've played with me enough!",
+			"babobadend02" : "How long has it been... I can't take this humiliation any longer...",
+			"babobadend03" : "I feel sick... Wait... Someone is coming...",
+			"babobadend04" : "I feel nauseous... Wait... No! Guys... Don't look at me.",
+			"babobadend05" : "Am I still alive...? It hurts so much...",
+			"babobadend06" : "Am I still alive...? It hurts so much... What...? Something huge is coming here.",
+			"babobadend07" : "Who... Who's there...?",
+			"babobadend08" : "G... Guards? Finally... I'm saved.",
+			"babobadend09" : "The guards found us while I was being dragged like cattle. They killed the slaver and brought me to the barracks. As soon as we arrived, the guards investigated and found out my identity. I was so embarrassed I couldn't lift my head.",
+			"babobadend10" : "The guards carried me to the barracks, exhausted and unable to talk. As soon as we arrived, the guards investigated found out my identity. Now they know what happened to me.",
+			"baboencounterevent01_01" : "He easily stripped me and started groping all over. Then he played with my cunt for some time... I had no choice but to endure the overwhelming and violent penetration...",
+			"baboencounterevent01_02" : "Once again, the rapist began to grope my body and play with my clit and nipples. I can feel his horrible breath as I shudder helplessly... It feels like I'll be his sex toy until I die...",
+			"baboencounterevent02_01" : "Suddenly, one of the men violently pulled me toward him. They look like they could kill with the slightest provocation. Since I'm in their grasps, I decided to see what's going on here.",
+			"baboencounterevent02_02" : "The three agitated Nords ripped my clothes apart and began to rape me violently.",
+			"baboencounterevent02_03" : "These guys dragged me to the slave market to make money... I couldn't resist and was dragged like a pig...",
+			"baboencounterevent02_04" : "Suddenly, a man violently dragged me toward him and began choking me. Meanwhile, the rest of the guys were laughing and trying to undress me!",
+			"baboencounterevent02_05" : "After choking me half-conscious, they lifted me up and began to play with my naked body...",
+			"baboencounterevent03_01" : "The four violent Orcs ripped my clothes apart and began to rape me",
+			"baboencounterevent03_02" : "They decided to rape me again...",
+			"baboencounterevent03_03" : "Their leader is dead. They're trying to flee now.",
+			"baboencounterevent04_01" : "One of them came over to search for something suspicious... Wh... What!?",
+			"baboencounterevent04_02" : "The two muscular Nords began to rape me.",
+			"baboencounterevent04_03" : "It seems I have provoked them...",
+			"baboencounterevent05_01" : "This man started attacking me for no reason. I have to fight back! Who knows what would happen if I lose?",
+			"baboencounterevent05_02" : "What... What in Oblivion is this mad man? What a freak.",
+			"baboencounterevent05_03" : "As my consciousness fades, I felt him dragging me somewhere...",
+			"baboencounterevent06_01" : "I got out with a 2000 gold bribe...",
+			"baboencounterevent06_02" : "They won't come again... for now. I fear other sellswords will come and hunt me soon. I have to do something about the debt problem.",
+			"baboencounterevent06_03" : "They just left me here... They will keep coming for me if I don't do something.",
+			"baboencounterevent06_04" : "No... Don't leave me here like this... Please! I'm going to get raped!",
+			"baboencounterevent08_01" : "This man intends to subdue and rape me. I don't think my skimpy armor can take much before it's torn apart. I need to stop him before that happens.",
+			"baboencounterevent08_02" : "No... Please don't leave me like this... At this rate I'll be raped by passers-by...!",
+			"baboencounterevent10_01" : "Looks like I have to kill them to save her.",
+			"baboencounterevent10_02" : "They left me chained after the rape.",
+			"baboencounterevent11_01" : "They dragged me here, Blue Palace, fully naked... This wretched nobleman intends to brag about me openly in front of everyone. Everyone will see all of my precious parts. This is unbearably humiliating...!",
+			"baboencounterevent11_02" : "If the Jarl didn't save me, they'd never have let me go... I finally realized I was too reckless and foolish to think I could handle the situation. To him, I was just a disposable plaything.",
+			"baboencounterevent12_01" : "They look incredibly strong! I'll probably get killed... but if I don't kill them all now, they'll hunt me for the rest of my life!",
+			"baboencounterevent12_02" : "To survive, I have to satisfy him with all I've got! Please my pussy be tight...",
+			"baboencounterevent12_03" : "Somebody help me! I don't want to be raped and pregnant! Please! I'm not a slave!",
+			"baboencounterevent12_04" : "They decided to take me to a slave market... No... Please mercy... I'm not a fuck toy! After endless humiliation and rape, I'll die in shame...",
+			"baboencounterevent12_05" : "My uterus is filled with semen and my throbbing groin makes it hard to even stand up... But if I give up here, I'll be treated like a whore... no... fuck toy for the rest of my life! That's... No!! I will fight!!",
+			"baboencounterevent12_06" : "A noble knight found me being taken as a sex slave. He rescued me and took me to safety... I can't believe I am still alive... Thank the Gods...",
+			"baboencounterevent13_01" : "Bastards! Don't touch me! Despite my cries, they grabbed me, stripped me, and began to abuse me.",
+			"baboencounterevent13_02" : "You raped me and then you leave me like this?! At least I'm alive...",
+			"baboencounterevent13_03" : "I decided to settle the debt. I need to stop by the office to handle the debt.",
+			"babochangelocationevent01_01" : "I gave up the fight. People will see me as a coward. (Reputation Decrease)",
+			"babochangelocationevent01_02" : "No...! Don't! I'll do anything! Please don't rape me!",
+			"babochangelocationevent01_03" : "No... Please... people are watching me being raped... It's a nightmare... Please... Stop!",
+			"babochangelocationevent01_04" : "This can't be real... He tied me up and humiliated me in front of people. They saw all of my naked body... What am I going to do now...? Should I beg him...? Why didn't the guards stop this insanity?",
+			"babochangelocationevent01_05" : "I lost the duel and got raped like he said... Moreover I was bound and humiliated in front of people... It was an unbearable disgrace...",
+			"babochangelocationevent01_06" : "I lost the duel and got raped like he said... He played with me as he wished, then bound me in restraints and humiliated me... A guard freed me, but people will gossip about my defeat...",
+			"babochangelocationevent01_07" : "I lost the duel and got raped like he said... He bound me in restraints to humiliate me further but thankfully, my companion helped me out.",
+			"babochangelocationevent01_08" : "I defeated the challenger and took his life. Some people seem disappointed... I don't know what they expect. At any rate, once again I proved myself today. (Reputation Increase)",
+			"babochangelocationevent01_09" : "I fled during the fight. People will remember me as a coward.",
+			"babochangelocationevent02_01" : "I'm defeated. The beast seems to be trying to mate with me somehow. Damn it.",
+			"babochangelocationevent02_02" : "That was horrible... I thought my pussy was going to collapse...",
+			"babochangelocationevent03_01" : "I heard some unpleasant noises down there. From the cellar I guess?",
+			"babochangelocationevent03_02" : "They are trying to overwhelm me. They barricaded the doors so that I have no choice but to fight.",
+			"babochangelocationevent03_03" : "They decided to leave... I need to get out of here...!",
+			"babochangelocationevent03_04" : "They left me behind. I don't know why but... That was close.",
+			"babochangelocationevent03_05" : "It seems they are gone without harming people this time.",
+			"babochangelocationevent03_06" : "They sold me into slavery...",
+			"babochangelocationevent03_07" : "I was raped... I thought all my belongings were stolen... but the innkeeper had them...",
+			"babochangelocationevent04_00" : "Orcs are coming to rape me. I need to get ready.",
+			"babochangelocationevent05_01" : "This man is trying to rape me!",
+			"babochangelocationevent06_01" : "I feel something ominous in the dark...",
+			"babochangelocationevent06_02" : "After he satisfied himself, he abandoned me... I woke up several hours later, covered in his filthy cum...",
+			"babochangelocationevent06_03" : "I hear the guards shouting somewhere. They must have caught another criminal.",
+			"babochangelocationevent06_04" : "The vice captain dealt with the rapist. I can't believe that he helped me out.",
+			"babochangelocationevent07_01" : "I sense someone glancing at me...",
+			"babochangelocationevent07_02" : "What...? What is he doing? He's forcing me to drink!?",
+			"babochangelocationevent07_03" : "What a blunder. If it wasn't for my companion, I would have been dragged somewhere and played with as their lusts desired. I did the naive thing of trusting strangers without thinking... I hope this will be my lesson.",
+			"babochangelocationevent07_04" : "It looks like I was so drunk I blacked out... It seems they departed before I woke up.",
+			"babochangelocationevent07_05" : "Did they actually force me to drink? Whatever it might be, that was so close...",
+			"babokidnapevent01_01" : "Even though I was drugged, I could hear some of what they were saying... they were judging my body. My consciousness continued to fade as they stripped me and prepared to rape me. I feel no strength in my body...",
+			"babokidnapevent01_02" : "The sound of me being gang raped by them is loud enough to be heard from outside the room. However, my mind, which was addled by drugs and aphrodisiacs and fading in and out of consciousness, , could not realize it.",
+			"babokidnapevent01_03" : "I... don't remember anything... What is this stinky goo all over me? My whole body is so hot and sensitive, but sore...",
+			"babokidnapevent01_04" : "Ow... My head. Looks like I was blacked out... Shit, they took some of my coins. Bastards.",
+			"babokidnapevent01_05" : "Urrggh... When did I passed out? Shit, what is this gross thing on my body? Semen? These degenerates were using my naked body...? What happened...",
+			"babokidnapevent01_06" : "I think I heard something in my sleep.. Was it just a dream?",
+			"babokidnapevent01_07" : "My body is heavy. Oh, it hurts... Huh...? What's in my belly? And... is this semen in my pussy? Those bastards fucked me in my sleep... Damn it...",
+			"babokidnapevent01_08" : "I struggled to try to undo the restraints, but I only exhausted myself. I'm still tied up helplessly.",
+			"babokidnapevent01_09" : "I successfully freed myself... I need to get out of this place as quickly as possible before he catches me.",
+			"babokidnapevent01_10" : "There is no doubt that this man wants to keep me here forever... I must do something! (To escape, press the hotkey to choose an escape route)",
+			"babokidnapevent01_11" : "That was so close... I thought he was going to notice...",
+			"babokidnapevent01_12" : "Bastard... I finally killed him.",
+			"babokidnapevent01_13" : "He spotted me trying to sneak away. I have to fight to get out of here!",
+			"babokidnapevent01_14" : "Only my futile cries echoed in the house.",
+			"babokidnapevent01_15" : "I thought I was done for... But I'm still alive. I don't know what happened to me. Perhaps someone rescued me while I fainted. Regardless, my reputation is ruined...",
+			"stealingarmorscriptarmorstolen" : "He took my armor!!",
+			"stealingarmorscriptpantiesstolen" : "He took my panties!!",
+			"stealingarmorscriptclothesstolen" : "I am being stripped! I have to do something!",
+			"baboeventmisc01" : "Now you can seduce certain kinds of men... If you successfully charm one, you can take advantage of him. Please press Hotkey button in front of a valid target to start an attempt. He will be your slave... (Available target types: Mercenaries, Merchants)"
+		}
+	}
+	
+	const cleanJson = (old) => {
+		return {string: {...old.string, ...cleaned.string}}
+	}
+	
+	let toSave = null;
+	
+	document.getElementById('file').addEventListener('input', async (e)=>{
+		try {
+			toSave = JSON.parse(await e.target.files[0].text())
+		} catch {}
+	})
+	document.getElementById('saver').addEventListener('click', async (e)=>{
+		try {
+			toSave = cleanJson(toSave)
+			if (!toSave) throw new Error()
+			download("BakaStrings.json", JSON.stringify(toSave, null, '\t'))
+			e.target.innerHTML = 'success'
+		} catch {
+			e.target.innerHTML = 'failed'
+			return
+		}
+	})
+</script>

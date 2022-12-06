@@ -8,7 +8,14 @@ const download = (filename, text) => {
 	pom.remove()
 }
 const cleanJson = (old) => {
-	return {string: {...old.string, ...cleaned.string}}
+    result = { string: {} }
+    for (let t in old.string){
+        result.string[t] = old.string[t]
+    }
+    for (let t in cleaned.string){
+        result.string[t] = cleaned.string[t]
+    }
+	return result
 }
 let toSave = null;
 document.getElementById('file').addEventListener('input', async (e)=>{

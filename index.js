@@ -1,5 +1,10 @@
 //by TGM043 (Discord)/ironmaiden1872 (Nexus Mods)
 import cleaned from './BakaStrings.json' assert {type: 'json'}
+const decoder = new TextDecoder()
+for (let title in cleaned.string){
+    cleaned.string[title] = decoder.decode(cleaned.string[title])
+}
+
 const download = (filename, text) => {
 	var pom = document.createElement('a')
 	pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text))
